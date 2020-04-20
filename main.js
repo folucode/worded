@@ -69,7 +69,7 @@ let compare = (index, answer) => {
                         cy="200"
                         transform="rotate(-90 100 100)"
                     />
-                    <h3 class="controls">${score / questions.length}</h3>
+                    <h3 class="controls">${score} / ${questions.length}</h3>
                 </svg>
             </div>
         </div>
