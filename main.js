@@ -15,9 +15,7 @@ questions.forEach((q, i) => {
             <div class="card">
                 <div class="card-body" id="question_${i}">
                     <h5 class="card-title">Question ${i + 1}</h5>
-                    <p class="card-text">Which word is <i><b>${
-											q.type
-										}</b></i> to <i><b>${q.word}</b></i></p>
+                    <p class="card-text">Which word is <i><b>${q.type}</b></i> to <i><b>${q.word}</b></i></p>
                     <button class="card-link btn btn-outline-secondary" id="${ans1}" onclick="compare(${i}, '${ans1}')">${ans1}</button>
                     <button class="card-link btn btn-outline-secondary" id="${ans2}" onclick="compare(${i}, '${ans2}')">${ans2}</button>
                 </div>
@@ -71,6 +69,7 @@ let compare = (index, answer) => {
                         cy="200"
                         transform="rotate(-90 100 100)"
                     />
+                    <h3 class="controls">${score / questions.length}</h3>
                 </svg>
             </div>
         </div>
